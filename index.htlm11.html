@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<htlm>
+<head>
+    <title>Search engine for my web</title>
+<body style="background-color: gray">
+        <form action="" method="POST">
+                <h1>Search:
+                <input type="text" name="search_entered" value='hosanna'/><br>
+                <input type="submit" name="submit" value="Search"/></h1><br>
+                </form>
+                <?php
+
+                $search= $_POST['search_entered'];
+                
+                $searchoriginal= $search;
+                
+                $search= strtolower($search);
+                
+                $search= trim($search);
+                
+                
+                
+                $search= explode(" ", $search);
+                
+                $countsearchterms= count($search);
+                
+                $submitbutton= $_POST['submit'];
+                
+                ?>
+                
+                
+                                
+
+</body>
+</head>
+</htlm>
